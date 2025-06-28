@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management System</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6fa;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      width: 100%;
+      height: 260px;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      width: 100%;
+      height: 260px;
+      background: rgba(45, 62, 80, 0.55);
+      top: 0;
+      left: 0;
+    }
+    .hero-text {
+      position: absolute;
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+    .container {
+      max-width: 600px;
+      margin: -60px auto 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      padding: 40px 40px 30px 40px;
+      position: relative;
+      z-index: 3;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 22px 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    a {
+      text-decoration: none;
+      flex: 1;
+    }
+    .main-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 0;
+      background: #2d3e50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin: 0 auto;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .main-btn:hover {
+      background: #1a2533;
+    }
+    .icon {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: #f4f6fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      font-size: 1.5em;
+    }
+    @media (max-width: 700px) {
+      .container { max-width: 95%; padding: 20px 5px; }
+      .hero { height: 160px; }
+      .hero-overlay { height: 160px; }
+      .hero-text { font-size: 1.3em; }
+    }
+  </style>
+  <!-- Use Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">Welcome to Grand Palace Hotel</div>
+  </div>
+  <div class="container">
+    <ul>
+      <li>
+        <span class="icon" style="background:#e3f2fd;"><i class="fa-solid fa-bed" style="color:#1976d2;"></i></span>
+        <a href="/bookings.html"><button class="main-btn">Book a Room</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#fff3e0;"><i class="fa-solid fa-boxes-stacked" style="color:#ff9800;"></i></span>
+        <a href="/inventory.html"><button class="main-btn">Manage Inventory</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#e8f5e9;"><i class="fa-solid fa-file-invoice-dollar" style="color:#43a047;"></i></span>
+        <a href="/billing.html"><button class="main-btn">Billing</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#fce4ec;"><i class="fa-solid fa-comment-dots" style="color:#d81b60;"></i></span>
+        <a href="/feedback.html"><button class="main-btn">Add Feedback</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#ede7f6;"><i class="fa-solid fa-list" style="color:#5e35b1;"></i></span>
+        <a href="/all-bookings"><button class="main-btn">View All Bookings</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#fffde7;"><i class="fa-solid fa-warehouse" style="color:#fbc02d;"></i></span>
+        <a href="/all-inventory"><button class="main-btn">View Inventory</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#e0f2f1;"><i class="fa-solid fa-money-bill-wave" style="color:#00897b;"></i></span>
+        <a href="/all-bills"><button class="main-btn">View Bills</button></a>
+      </li>
+      <li>
+        <span class="icon" style="background:#f3e5f5;"><i class="fa-solid fa-comments" style="color:#8e24aa;"></i></span>
+        <a href="/all-feedbacks"><button class="main-btn">View Feedbacks</button></a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
